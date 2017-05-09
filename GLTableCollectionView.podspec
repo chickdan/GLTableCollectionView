@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   s.homepage = "https://github.com/giulio92"
   s.license = { :type => "MIT", :file => "LICENSE" }
   s.author = { "Giulio" => "" }
-  s.source = { :git => "https://github.com/giulio92/GLTableCollectionView.git", :tag => "v#{s.version}", :submodules => true }
+  s.source = { :git => "https://github.com/giulio92/GLTableCollectionView.git", :tag => spec.version.to_s, :submodules => true }
   s.platform = :ios, “8.4”
   s.ios.source_files = "Source/**/*.{h,swift}"
   s.requires_arc = true
