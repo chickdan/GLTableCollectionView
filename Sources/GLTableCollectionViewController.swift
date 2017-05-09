@@ -29,7 +29,7 @@
 
 import UIKit
 
-final class GLTableCollectionViewController: UITableViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+public class GLTableCollectionViewController: UITableViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 	// This static string constant will be the cellIdentifier for the
 	// UITableViewCells holding the UICollectionView, it's important to append
 	// "_section#" to it so we can understand which cell is the one we are
@@ -47,7 +47,7 @@ final class GLTableCollectionViewController: UITableViewController, UICollection
 	/// Set true to enable UICollectionViews scroll pagination
 	var paginationEnabled: Bool = true
 
-	override func viewDidLoad() {
+	override public func viewDidLoad() {
 		super.viewDidLoad()
 
 		// Uncomment the following line to preserve selection between
@@ -77,22 +77,22 @@ final class GLTableCollectionViewController: UITableViewController, UICollection
 		}
 	}
 
-	override func didReceiveMemoryWarning() {
+	override public func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 		// Dispose of any resources that can be recreated.
 	}
 
 	// MARK: <UITableView Data Source>
 
-	override func numberOfSections(in tableView: UITableView) -> Int {
+	override public func numberOfSections(in tableView: UITableView) -> Int {
 		return numberOfSections
 	}
 
-	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return numberOfCollectionsForRow
 	}
 
-	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		// Instead of having a single cellIdentifier for each type of
 		// UITableViewCells, like in a regular implementation, we have multiple
 		// cellIDs, each related to a indexPath section. By Doing so the
@@ -122,25 +122,25 @@ final class GLTableCollectionViewController: UITableViewController, UICollection
 		return cell!
 	}
 
-	override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+	override public func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
 		return "Section: " + section.description
 	}
 
 	// MARK: <UITableView Delegate>
 
-	override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+	override public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 		return 88
 	}
 
-	override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+	override public func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
 		return 28
 	}
 
-	override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+	override public func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
 		return 0.0001
 	}
 
-	override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+	override public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
 		guard let cell: GLCollectionTableViewCell = cell as? GLCollectionTableViewCell else {
 			return
 		}
@@ -150,15 +150,15 @@ final class GLTableCollectionViewController: UITableViewController, UICollection
 
 	// MARK: <UICollectionView Data Source>
 
-	func numberOfSections(in collectionView: UICollectionView) -> Int {
+	public func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return 1
 	}
 
-	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+	public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return numberOfCollectionItems
 	}
 
-	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+	public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		guard let cell: GLIndexedCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: GLIndexedCollectionViewCell.identifier, for: indexPath) as? GLIndexedCollectionViewCell else {
 			fatalError("UICollectionViewCell must be of GLIndexedCollectionViewCell type")
 		}
@@ -180,11 +180,11 @@ final class GLTableCollectionViewController: UITableViewController, UICollection
 	let collectionLeftInset: CGFloat = 10
 	let collectionRightInset: CGFloat = 10
 
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
 		return UIEdgeInsets(top: collectionTopInset, left: collectionLeftInset, bottom: collectionBottomInset, right: collectionRightInset)
 	}
 
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		let tableViewCellHeight: CGFloat = tableView.rowHeight
 		let collectionItemWidth: CGFloat = tableViewCellHeight - (collectionLeftInset + collectionRightInset)
 		let collectionViewHeight: CGFloat = collectionItemWidth
@@ -192,17 +192,17 @@ final class GLTableCollectionViewController: UITableViewController, UICollection
 		return CGSize(width: collectionItemWidth, height: collectionViewHeight)
 	}
 
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
 		return 10
 	}
 
-	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+	public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
 		return 0
 	}
 
 	// MARK: <UICollectionView Delegate>
 
-	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+	public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
 	}
 
