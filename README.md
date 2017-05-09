@@ -10,6 +10,7 @@
 |develop|[![developCIStatus](https://travis-ci.org/giulio92/GLTableCollectionView.svg?branch=develop)](https://travis-ci.org/giulio92/GLTableCollectionView/branches)|
 
 [![GitHub release](https://img.shields.io/github/release/giulio92/GLTableCollectionView.svg)](https://github.com/giulio92/GLTableCollectionView/releases/latest)
+[![Version](https://img.shields.io/cocoapods/v/GLTableCollectionView.svg)](http://cocoapods.org/pods/GLTableCollectionView)
 ![Language](https://img.shields.io/badge/language-Swift%203.x-orange.svg)
 ![Supported platforms](https://img.shields.io/badge/platform-iOS-lightgrey.svg)
 [![codebeat badge](https://codebeat.co/badges/5a29ccd4-fda0-45d1-ae57-e7158e01449a)](https://codebeat.co/projects/github-com-giulio92-gltablecollectionview)
