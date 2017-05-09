@@ -32,6 +32,17 @@ GLTableCollectionView is a ready to use `UITableViewController` with a `UICollec
 💎|Clean architecture
 🔧|Unit Tests
 
+## Installation
+### CocoaPods
+```ruby
+use_frameworks!
+pod "GLTableCollectionView", "~> 1.71”
+```
+### Carthage
+```ruby
+github “giulio92/GLTableCollectionView"
+```
+
 ## Enable/disable scroll pagination
 Set `paginationEnabled` variable `true` in GLTableCollectionViewController class, `false` to disable. Default value is `true`.
 ```
