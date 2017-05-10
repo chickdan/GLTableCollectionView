@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD0A82861EC23DB300C6ADFC /* GLTableCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A82851EC23DB300C6ADFC /* GLTableCollectionViewTests.swift */; };
 		BD0A82A31EC2425C00C6ADFC /* GLCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A829F1EC2425C00C6ADFC /* GLCollectionTableViewCell.swift */; };
 		BD0A82A41EC2425C00C6ADFC /* GLCollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A829F1EC2425C00C6ADFC /* GLCollectionTableViewCell.swift */; };
 		BD0A82A51EC2425C00C6ADFC /* GLIndexedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A82A01EC2425C00C6ADFC /* GLIndexedCollectionViewCell.swift */; };
 		BD0A82A61EC2425C00C6ADFC /* GLIndexedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A82A01EC2425C00C6ADFC /* GLIndexedCollectionViewCell.swift */; };
-		BD0A82A71EC2425C00C6ADFC /* GLIndexedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0A82A11EC2425C00C6ADFC /* GLIndexedCollectionViewCell.xib */; };
 		BD0A82A81EC2425C00C6ADFC /* GLIndexedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0A82A11EC2425C00C6ADFC /* GLIndexedCollectionViewCell.xib */; };
 		BD0A82AA1EC2425C00C6ADFC /* GLTableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A82A21EC2425C00C6ADFC /* GLTableCollectionViewController.swift */; };
 		BD0A82B01EC2427400C6ADFC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD0A82AD1EC2427400C6ADFC /* Info.plist */; };
 		BD0A82B21EC242A400C6ADFC /* GLTableCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0A82B11EC242A400C6ADFC /* GLTableCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BDB0E4191EC25D4000AA7D34 /* GLTableCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0A82A21EC2425C00C6ADFC /* GLTableCollectionViewController.swift */; };
-		BDB0E41D1EC25D9500AA7D34 /* GLTableCollectionViewTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = BD0A82801EC23DB300C6ADFC /* GLTableCollectionViewTests.xctest */; };
 		BDB0E41F1EC25DE200AA7D34 /* GLTableCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0A82771EC23DB300C6ADFC /* GLTableCollectionView.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +28,18 @@
 			remoteInfo = GLTableCollectionView;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD3F03C11EC3D7B8003386D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BD0A82771EC23DB300C6ADFC /* GLTableCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLTableCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,7 +142,7 @@
 				BD0A82721EC23DB300C6ADFC /* Sources */,
 				BD0A82731EC23DB300C6ADFC /* Frameworks */,
 				BD0A82741EC23DB300C6ADFC /* Headers */,
-				BD0A82751EC23DB300C6ADFC /* Resources */,
+				BD3F03C11EC3D7B8003386D0 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -202,21 +211,12 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		BD0A82751EC23DB300C6ADFC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD0A82A71EC2425C00C6ADFC /* GLIndexedCollectionViewCell.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		BD0A827E1EC23DB300C6ADFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BD0A82B01EC2427400C6ADFC /* Info.plist in Resources */,
 				BD0A82A81EC2425C00C6ADFC /* GLIndexedCollectionViewCell.xib in Resources */,
-				BDB0E41D1EC25D9500AA7D34 /* GLTableCollectionViewTests.xctest in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0A82A41EC2425C00C6ADFC /* GLCollectionTableViewCell.swift in Sources */,
-				BD0A82861EC23DB300C6ADFC /* GLTableCollectionViewTests.swift in Sources */,
 				BD0A82AA1EC2425C00C6ADFC /* GLTableCollectionViewController.swift in Sources */,
 				BD0A82A61EC2425C00C6ADFC /* GLIndexedCollectionViewCell.swift in Sources */,
 			);
