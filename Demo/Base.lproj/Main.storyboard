@@ -12,7 +12,7 @@
         <!--Table Collection View Controller-->
         <scene sceneID="MYD-pX-siV">
             <objects>
-                <tableViewController storyboardIdentifier="tableCollectionView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lzn-74-EiO" customClass="GLTableCollectionViewController" customModule="Demo" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="tableCollectionView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lzn-74-EiO" customClass="GLTableCollectionViewController" customModule="GLTableCollectionView" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="1" id="l3B-sn-hQc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

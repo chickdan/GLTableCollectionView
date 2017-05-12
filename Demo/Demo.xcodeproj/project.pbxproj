@@ -12,6 +12,7 @@
 		BD0A82BB1EC2474F00C6ADFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0A82B71EC2474F00C6ADFC /* LaunchScreen.storyboard */; };
 		BD0A82BC1EC2474F00C6ADFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0A82B91EC2474F00C6ADFC /* Main.storyboard */; };
 		BD0A82BF1EC2527E00C6ADFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 747CF9031DE6EB010051A5FF /* Assets.xcassets */; };
+		BD203AAE1EC55EDB00077A5A /* GLIndexedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD203AAD1EC55EDB00077A5A /* GLIndexedCollectionViewCell.xib */; };
 		BDF512871EC2564800C57C4C /* GLTableCollectionView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF512861EC2564800C57C4C /* GLTableCollectionView.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		747CF90D1DE6EB010051A5FF /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0A82B81EC2474F00C6ADFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		BD0A82BA1EC2474F00C6ADFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		BD203AAD1EC55EDB00077A5A /* GLIndexedCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GLIndexedCollectionViewCell.xib; sourceTree = SOURCE_ROOT; };
 		BDF512861EC2564800C57C4C /* GLTableCollectionView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLTableCollectionView.framework; path = ../Carthage/Build/iOS/GLTableCollectionView.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 		747CF8FB1DE6EB010051A5FF /* GLTableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				BD203AAD1EC55EDB00077A5A /* GLIndexedCollectionViewCell.xib */,
 				BD0A82B71EC2474F00C6ADFC /* LaunchScreen.storyboard */,
 				BD0A82B91EC2474F00C6ADFC /* Main.storyboard */,
 				747CF8FC1DE6EB010051A5FF /* AppDelegate.swift */,
@@ -182,6 +185,7 @@
 				BD0A82BC1EC2474F00C6ADFC /* Main.storyboard in Resources */,
 				747CF9041DE6EB010051A5FF /* Assets.xcassets in Resources */,
 				BD0A82BB1EC2474F00C6ADFC /* LaunchScreen.storyboard in Resources */,
+				BD203AAE1EC55EDB00077A5A /* GLIndexedCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
