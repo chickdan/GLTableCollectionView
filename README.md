@@ -32,6 +32,7 @@ GLTableCollectionView is a ready to use `UITableViewController` with a `UICollec
 💎|Clean architecture
 🔧|Unit Tests
 
+
 ## Installation
 ### CocoaPods
 ```ruby
@@ -40,8 +41,13 @@ pod "GLTableCollectionView", "~> 1.71”
 ```
 ### Carthage
 ```ruby
-github “giulio92/GLTableCollectionView"
+github "giulio92/GLTableCollectionView"
 ```
+
+## Usage
+Create a .xib file named `GLIndexedCollectionViewCell` with a collection view cell. Name the cell `collectionViewCellID` and in the Identity Inspector assign it to the Class `GLIndexedCollectionViewCell` and the Module `GLTableCollectionView`.
+
+Then create a UITableView in Storyboard and assign the custom class `GLTableCollectionViewController` and the Module `GLTableCollectionView`.
 
 ## Enable/disable scroll pagination
 Set `paginationEnabled` variable `true` in GLTableCollectionViewController class, `false` to disable. Default value is `true`.
