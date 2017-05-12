@@ -149,9 +149,7 @@ class GLCollectionTableViewCell: UITableViewCell {
 	/// `UICollectionViewFlowLayout` will deduct the right scrolling offset
 	/// values automatically so you should not set the `itemSize` value
 	/// directly.
-	///
-	/// Default value is `nil`, since `Bool` is `Optional`.
-	var collectionViewPaginatedScroll: Bool?
+	var collectionViewPaginatedScroll: Bool = true
 
 	override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -186,9 +184,7 @@ class GLCollectionTableViewCell: UITableViewCell {
 
 		collectionFlowLayout.paginatedScroll = collectionViewPaginatedScroll
 
-		if collectionViewPaginatedScroll == true {
-			collectionView.isPagingEnabled = false
-		}
+		collectionView.isPagingEnabled = collectionViewPaginatedScroll ? true : false
 
 		guard collectionView.frame != contentView.bounds else {
 			return
