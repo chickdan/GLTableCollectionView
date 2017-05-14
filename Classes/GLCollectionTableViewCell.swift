@@ -184,7 +184,7 @@ class GLCollectionTableViewCell: UITableViewCell {
 
 		collectionFlowLayout.paginatedScroll = collectionViewPaginatedScroll
 
-		collectionView.isPagingEnabled = collectionViewPaginatedScroll ? true : false
+		collectionView.isPagingEnabled = collectionViewPaginatedScroll
 
 		guard collectionView.frame != contentView.bounds else {
 			return
